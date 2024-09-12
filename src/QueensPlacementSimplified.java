@@ -82,12 +82,12 @@ public class QueensPlacementSimplified {
 
     public static void main(String[] args) {
         List<Position> queensPlacement;
-        List<List<Position>> allPlacements = new ArrayList<List<Position>>();
+        List<List<Position>> allPlacements = new ArrayList<>();
         int counter = 0;
 
         do  {
-            queensPlacement = new ArrayList<Position>();
-            System.out.println("Counter: " + String.valueOf(counter));
+            queensPlacement = new ArrayList<>();
+            System.out.println("Counter: " + counter);
             counter++;
         } while (placeQueen(queensPlacement, allPlacements, (byte)0));
     }
